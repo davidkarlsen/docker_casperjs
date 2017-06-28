@@ -11,7 +11,12 @@ apt-get update
 apt-get install -y \
   phantomjs \
   git \
-  python
+  python \
+  nodejs \
+  curl \
+  wget \
+  nano \
+  vim
 apt-get clean
 ###
 # Installing CasperJS
