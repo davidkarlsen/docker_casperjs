@@ -15,7 +15,8 @@ apt-get install -y \
   curl \
   wget \
   nano \
-  vim
+  vim \
+  bzip2
 apt-get clean
 wget -qO- https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2 |tar xjv -C /usr/local
 ln -s /usr/local/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
