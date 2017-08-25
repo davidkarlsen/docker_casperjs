@@ -9,7 +9,6 @@ apt-get install -y \
 add-apt-repository ppa:tanguy-patte/phantomjs
 apt-get update
 apt-get install -y \
-#  phantomjs \
   git \
   python \
   nodejs \
