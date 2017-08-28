@@ -9,15 +9,18 @@ apt-get install -y \
 add-apt-repository ppa:tanguy-patte/phantomjs
 apt-get update
 apt-get install -y \
-  phantomjs \
   git \
   python \
   nodejs \
   curl \
   wget \
   nano \
-  vim
+  vim \
+  bzip2 \
+  fontconfig
 apt-get clean
+wget -qO- https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2 |tar xjv -C /usr/local
+ln -s /usr/local/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
 ###
 # Installing CasperJS
 ###
