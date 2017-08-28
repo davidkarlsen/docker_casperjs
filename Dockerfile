@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER zopanix <zopanix@gmail.com>
-ENV CASPERJS_VERSION=1.1.3
+ENV CASPERJS_VERSION=1.1.4-1
 #see: https://github.com/moby/moby/issues/5539
 ENV QT_QPA_PLATFORM=offscreen
 ADD ./resources /resources
