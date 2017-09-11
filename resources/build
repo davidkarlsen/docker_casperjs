@@ -10,8 +10,6 @@ set -e
 apt-get update
 apt-get install -y \
   software-properties-common
-add-apt-repository ppa:tanguy-patte/phantomjs
-apt-get update
 apt-get install -y \
   phantomjs \
   git \
