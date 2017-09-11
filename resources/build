@@ -1,4 +1,8 @@
 #!/bin/sh
+
+#fail script if errors
+set -e
+
 ###
 # Installing PhantomJS
 ###
@@ -6,8 +10,6 @@
 apt-get update
 apt-get install -y \
   software-properties-common
-add-apt-repository ppa:tanguy-patte/phantomjs
-apt-get update
 apt-get install -y \
   phantomjs \
   git \
@@ -35,3 +37,6 @@ cd /opt/casperjs
 rm -rf *.gemspec docs rpm samples
 apt-get remove -y \
   git
+
+phantomjs --version
+casperjs --version
