@@ -6,10 +6,9 @@ set -e
 ###
 
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
-
 # Installing PhantomJS
 apt-get update
-apt-get install -y \
+DEBIAN_FRONTEND=noninteractive apt-get install -y \
   phantomjs \
   git \
   python \
