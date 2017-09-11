@@ -36,3 +36,6 @@ cd /opt/casperjs
 rm -rf *.gemspec docs rpm samples
 apt-get remove -y \
   git
+
+phantomjs --version
+casperjs --version
