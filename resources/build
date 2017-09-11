@@ -34,5 +34,6 @@ rm -rf *.gemspec docs rpm samples
 apt-get remove -y \
   git
 
+fc-cache -vf
 phantomjs --version
 casperjs --version
