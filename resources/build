@@ -5,11 +5,7 @@ set -e
 
 ###
 # Installing PhantomJS
-###
-# Adding PPA for PhantomJS
 apt-get update
-apt-get install -y \
-  software-properties-common
 apt-get install -y \
   phantomjs \
   git \
