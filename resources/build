@@ -15,7 +15,8 @@ apt-get install -y \
   wget \
   nano \
   vim \
-  ubuntustudio-font-meta
+  ubuntustudio-font-meta \
+  ttf-*
 apt-get clean
 ###
 # Installing CasperJS
