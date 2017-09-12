@@ -18,7 +18,9 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y \
   nano \
   vim \
   ubuntustudio-font-meta \
-  ttf-*
+
+FONTLIST=`apt-cache search ^ttf-*|grep ^ttf-|grep -v transitional|awk '{print $1}'`
+apt-get -y install $FONTLIST
 apt-get clean
 ###
 # Installing CasperJS
