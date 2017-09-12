@@ -19,7 +19,7 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y \
   vim \
   ubuntustudio-font-meta \
 
-FONTLIST=`apt-cache search ^ttf-*|grep ^ttf-|grep -v transitional|awk '{print $1}'`
+FONTLIST=`apt-cache search ^ttf-*|grep ^ttf-|grep -v -E "(transitional|ttf-root-installer)" | awk '{print $1}'`
 apt-get -y install $FONTLIST
 apt-get clean
 ###
